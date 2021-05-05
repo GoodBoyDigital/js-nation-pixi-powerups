@@ -1,5 +1,5 @@
 export function hi()
 {
 
-    console.log("boog")
+    console.log("boddog")
 }
