@@ -1,0 +1,22 @@
+{
+  "name": "pixi-powerups",
+  "version": "1.0.0",
+  "description": "pixi examples",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GoodBoyDigital/js-nation-pixi-powerups.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GoodBoyDigital/js-nation-pixi-powerups/issues"
+  },
+  "homepage": "https://github.com/GoodBoyDigital/js-nation-pixi-powerups#readme",
+  "dependencies": {
+    "pixi.js": "^6.0.2"
+  }
+}
