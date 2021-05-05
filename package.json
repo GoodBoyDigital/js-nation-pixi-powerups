@@ -4,7 +4,7 @@
   "description": "pixi examples",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npx webpack --watch"
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,12 @@
   "homepage": "https://github.com/GoodBoyDigital/js-nation-pixi-powerups#readme",
   "dependencies": {
     "pixi.js": "^6.0.2"
+  },
+  "devDependencies": {
+    "http-server": "^0.12.3",
+    "ts-loader": "^8.0.2",
+    "typescript": "^4.2.4",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
   }
 }
