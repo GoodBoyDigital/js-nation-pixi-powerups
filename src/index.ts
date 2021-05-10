@@ -1,27 +1,40 @@
-import { Renderer,Container,Graphics,Ticker, Sprite } from "pixi.js";
-
+import { Renderer, Container, Ticker } from 'pixi.js';
+import { makeBackground } from './makeBackground';
+import { makeCamera } from './makeCamera';
+import { makeEel } from './makeEel';
+import { makeFilters } from './makeFilters';
+import { makeFishes } from './makeFishes';
 
 document.body.style.margin = '0px';
 document.body.style.overflow = 'hidden';
 
+const width = window.innerWidth;
+const height = window.innerHeight;
+
 const renderer = new Renderer({
-    width:window.innerWidth,
-    height:window.innerHeight,
-    
-})
+    width,
+    height,
+});
 
 document.body.appendChild(renderer.view);
 
-
 const stage = new Container();
-const g = new Graphics().beginFill(0xFF0000).drawCircle(0,0,100);
 
-stage.addChild(g);
+const scene = new Container();
 
-Ticker.shared.add(()=>{
+stage.addChild(scene);
+
+makeBackground(renderer, scene);
+makeFishes(renderer, scene);
+makeEel(renderer, scene);
+makeFilters(renderer, scene);
+
+const imageContainer = new Container();
+
+makeCamera(renderer, scene, imageContainer);
+stage.addChild(imageContainer);
+
+Ticker.shared.add(() =>
+{
     renderer.render(stage);
-
-    // do stuff..
-
-
 });

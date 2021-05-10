@@ -1,0 +1,7 @@
+{
+    "deploy_command": {
+        "domain": "js-nation",
+        "input": "dist",
+        "build_command": "prod"
+    }
+}

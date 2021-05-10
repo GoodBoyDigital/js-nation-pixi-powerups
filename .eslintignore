@@ -1,0 +1,6 @@
+/docs/**
+/test/**
+/dist/**
+node_modules
+.eslintrc.json
+README.md
