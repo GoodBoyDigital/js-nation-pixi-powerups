@@ -1,0 +1,111 @@
+
+skeleton.png
+size: 897,224
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+arm
+  rotate: true
+  xy: 644, 7
+  size: 100, 113
+  orig: 100, 113
+  offset: 0, 0
+  index: -1
+big-arm
+  rotate: true
+  xy: 759, 7
+  size: 100, 113
+  orig: 100, 113
+  offset: 0, 0
+  index: -1
+big-front piece
+  rotate: true
+  xy: 276, 59
+  size: 163, 366
+  orig: 163, 366
+  offset: 0, 0
+  index: -1
+big-rear piece
+  rotate: true
+  xy: 276, 2
+  size: 55, 264
+  orig: 55, 264
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 2, 57
+  size: 272, 165
+  orig: 272, 165
+  offset: 0, 0
+  index: -1
+claw body
+  rotate: true
+  xy: 644, 109
+  size: 113, 172
+  orig: 113, 172
+  offset: 0, 0
+  index: -1
+eye
+  rotate: false
+  xy: 818, 153
+  size: 69, 69
+  orig: 69, 69
+  offset: 0, 0
+  index: -1
+short-eye
+  rotate: false
+  xy: 818, 153
+  size: 69, 69
+  orig: 69, 69
+  offset: 0, 0
+  index: -1
+leg
+  rotate: false
+  xy: 2, 7
+  size: 115, 48
+  orig: 115, 48
+  offset: 0, 0
+  index: -1
+saddle
+  rotate: false
+  xy: 818, 128
+  size: 77, 23
+  orig: 77, 23
+  offset: 0, 0
+  index: -1
+short-saddle
+  rotate: false
+  xy: 818, 128
+  size: 77, 23
+  orig: 77, 23
+  offset: 0, 0
+  index: -1
+short-slit
+  rotate: true
+  xy: 542, 2
+  size: 17, 55
+  orig: 17, 55
+  offset: 0, 0
+  index: -1
+slit
+  rotate: true
+  xy: 542, 2
+  size: 17, 55
+  orig: 17, 55
+  offset: 0, 0
+  index: -1
+short-stalk
+  rotate: true
+  xy: 542, 21
+  size: 36, 97
+  orig: 36, 97
+  offset: 0, 0
+  index: -1
+stalk
+  rotate: true
+  xy: 119, 19
+  size: 36, 137
+  orig: 36, 137
+  offset: 0, 0
+  index: -1

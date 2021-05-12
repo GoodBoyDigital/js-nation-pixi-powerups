@@ -13,7 +13,7 @@ export function makeCamera(renderer: Renderer, scene: Container, imageContainer:
 
     scene.interactive = true;
 
-    // // @ts-ignore
+    // @ts-ignore
     scene.on('pointerdown', (e: InteractionEvent) =>
     {
         const renderTexture = RenderTexture.create({ width: 512, height: 512 });
@@ -46,7 +46,7 @@ export function makeCamera(renderer: Renderer, scene: Container, imageContainer:
 
         picture.scale.set(0.5);
         picture.x = (shotCount * 200) % renderer.width;
-        picture.y = renderer.height - 300;
+        picture.y = 0;
         picture.rotation = (Math.random() - 0.5) * 0.3;
         shotCount++;
 

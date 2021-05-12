@@ -10,7 +10,7 @@ export function makeFilters(renderer: Renderer, scene: Container)
     const displacementSprite = Sprite.from('assets/water-displacement.jpeg');
 
     displacementSprite.texture.baseTexture.wrapMode = WRAP_MODES.REPEAT;
-    displacementSprite.scale.set(4);
+    displacementSprite.scale.set(6);
 
     scene.addChild(displacementSprite);
 

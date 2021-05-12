@@ -1,11 +1,11 @@
 import { Sprite } from '@pixi/sprite';
-import { Container, Point, Renderer, SimpleRope, Texture, Ticker } from 'pixi.js';
+import { Container, filters, Point, Renderer, SimpleRope, Texture, Ticker } from 'pixi.js';
 
 export function makeEel(renderer: Renderer, scene: Container)
 {
     // // step 3 add an eel
 
-    const eelLength = 918 / 40;
+    const eelLength = 918 / 20;
 
     const points = [];
 
@@ -14,14 +14,15 @@ export function makeEel(renderer: Renderer, scene: Container)
         points.push(new Point(i * eelLength, 0));
     }
 
-    const eel = new SimpleRope(Texture.from('assets/snake.png'), points);
+    const eel = new SimpleRope(Texture.from('assets/eel.png'), points);
 
+    // eel.filters = [filters];
     let count = 0;
 
     scene.addChild(eel);
 
-    eel.x = (renderer.width / 2) - (eel.width / 2);
-    eel.y = renderer.height / 2;
+    eel.x = 250;
+    eel.y = 500;
 
     Ticker.shared.add(() =>
     {

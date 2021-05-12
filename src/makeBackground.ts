@@ -1,11 +1,8 @@
-import { Container, Renderer, Sprite } from 'pixi.js';
+import { Container, Sprite } from 'pixi.js';
 
-export function makeBackground(renderer: Renderer, scene: Container)
+export function makeBackground(scene: Container)
 {
-    const background = Sprite.from('assets/sea-bg.jpeg');
+    const background = Sprite.from('assets/bg.png');
 
     scene.addChild(background);
-
-    background.width = renderer.width;
-    background.height = renderer.height;
 }
