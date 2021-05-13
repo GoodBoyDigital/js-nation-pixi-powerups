@@ -5,7 +5,7 @@ export function makeFilters(renderer: Renderer, scene: Container)
 {
     // const blur = new filters.BlurFilter();
 
-    //   scene.filters = [blur];
+    // scene.filters = [blur];
 
     const displacementSprite = Sprite.from('assets/water-displacement.jpeg');
 

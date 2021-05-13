@@ -11,8 +11,8 @@ import { makeSpine } from './makeSpine';
 document.body.style.margin = '0px';
 document.body.style.overflow = 'hidden';
 
-const width = 2000;// ;//window.innerWidth;
-const height = 1200;// window.innerHeight;
+const width = 2000;
+const height = 1200;
 
 const renderer = new Renderer({
     width,

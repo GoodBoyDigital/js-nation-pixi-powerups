@@ -16,7 +16,6 @@ export function makeEel(renderer: Renderer, scene: Container)
 
     const eel = new SimpleRope(Texture.from('assets/eel.png'), points);
 
-    // eel.filters = [filters];
     let count = 0;
 
     scene.addChild(eel);
