@@ -32,22 +32,23 @@ const scene = new Container();
 
 stage.addChild(scene);
 
-makeBackground(scene);
-makeFishes(renderer, scene);
-makeForeground(scene);
-makeEel(renderer, scene);
-makeSpine(renderer, scene);
-makeShine(scene);
-makeFilters(renderer, scene);
-
-const imageContainer = new Container();
-const vignette = Sprite.from('assets/vignette.png');
-
-makeCamera(renderer, scene, imageContainer);
-
-stage.addChild(vignette, imageContainer);
-
 Ticker.shared.add(() =>
 {
     renderer.render(stage);
 });
+
+// makeBackground(scene);
+// makeFishes(renderer, scene);
+// makeForeground(scene);
+// makeEel(renderer, scene);
+// makeSpine(renderer, scene);
+// makeShine(scene);
+// makeFilters(renderer, scene);
+
+// const imageContainer = new Container();
+// const vignette = Sprite.from('assets/vignette.png');
+
+// makeCamera(renderer, scene, imageContainer);
+
+stage.addChild(vignette, imageContainer);
+

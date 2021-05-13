@@ -16,22 +16,22 @@ export function makeEel(renderer: Renderer, scene: Container)
 
     const eel = new SimpleRope(Texture.from('assets/eel.png'), points);
 
-    let count = 0;
-
     scene.addChild(eel);
 
     eel.x = 250;
     eel.y = 500;
 
-    Ticker.shared.add(() =>
-    {
-        count += 0.1;
+    const count = 0;
 
-        // make the snake
-        for (let i = 0; i < points.length; i++)
-        {
-            points[i].y = Math.sin((i * 0.5) + count) * 30;
-            points[i].x = (i * eelLength) + (Math.cos((i * 0.3) + count) * 20);
-        }
-    });
+    // Ticker.shared.add(() =>
+    // {
+    //     count += 0.1;
+
+    //     // make the snake
+    //     for (let i = 0; i < points.length; i++)
+    //     {
+    //         points[i].y = Math.sin((i * 0.5) + count) * 30;
+    //         points[i].x = (i * eelLength) + (Math.cos((i * 0.3) + count) * 20);
+    //     }
+    // });
 }

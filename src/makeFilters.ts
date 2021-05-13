@@ -7,20 +7,20 @@ export function makeFilters(renderer: Renderer, scene: Container)
 
     // scene.filters = [blur];
 
-    const displacementSprite = Sprite.from('assets/water-displacement.jpeg');
+    // const displacementSprite = Sprite.from('assets/water-displacement.jpeg');
 
-    displacementSprite.texture.baseTexture.wrapMode = WRAP_MODES.REPEAT;
-    displacementSprite.scale.set(6);
+    // displacementSprite.texture.baseTexture.wrapMode = WRAP_MODES.REPEAT;
+    // displacementSprite.scale.set(6);
 
-    scene.addChild(displacementSprite);
+    // scene.addChild(displacementSprite);
 
-    const displacementFilter = new filters.DisplacementFilter(displacementSprite, 100);
+    // const displacementFilter = new filters.DisplacementFilter(displacementSprite, 100);
 
-    scene.filters = [displacementFilter];
+    // scene.filters = [displacementFilter];
 
-    Ticker.shared.add(() =>
-    {
-        displacementSprite.x += 2;
-        displacementSprite.y += 2;
-    });
+    // Ticker.shared.add(() =>
+    // {
+    //     displacementSprite.x += 2;
+    //     displacementSprite.y += 2;
+    // });
 }

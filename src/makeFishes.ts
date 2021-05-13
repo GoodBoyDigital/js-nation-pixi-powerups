@@ -22,14 +22,14 @@ export function makeFishes(renderer: Renderer, scene: Container)
         fishes.push(fish);
     }
 
-    Ticker.shared.add(() =>
-    {
-        for (let i = 0; i < fishes.length; i++)
-        {
-            const fish = fishes[i];
+    // Ticker.shared.add(() =>
+    // {
+    //     for (let i = 0; i < fishes.length; i++)
+    //     {
+    //         const fish = fishes[i];
 
-            fish.x += fish.speed;
-            fish.x %= renderer.width;
-        }
-    });
+    //         fish.x += fish.speed;
+    //         fish.x %= renderer.width;
+    //     }
+    // });
 }

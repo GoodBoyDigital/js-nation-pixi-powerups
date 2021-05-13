@@ -4,12 +4,10 @@ export function makeShine(scene: Container)
 {
     const shine = Sprite.from('assets/god-rays-ADD.png');
 
-    shine.blendMode = BLEND_MODES.ADD;
     scene.addChild(shine);
 
     const shine2 = Sprite.from('assets/god-rays-ADD.png');
 
-    shine2.blendMode = BLEND_MODES.ADD;
     scene.addChild(shine2);
 
     let tick = 0;
@@ -21,4 +19,7 @@ export function makeShine(scene: Container)
         shine.x = Math.cos(tick * 0.2) * 100;
         shine2.x = Math.sin(tick) * 100;
     });
+
+    // shine.blendMode = BLEND_MODES.ADD;
+    // shine2.blendMode = BLEND_MODES.ADD;
 }
