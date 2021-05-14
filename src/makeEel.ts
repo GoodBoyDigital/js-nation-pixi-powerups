@@ -16,6 +16,7 @@ export function makeEel(renderer: Renderer, scene: Container)
     }
 
     // let count = 0;
+
     // Ticker.shared.add(() =>
     // {
     //     count += 0.1;
