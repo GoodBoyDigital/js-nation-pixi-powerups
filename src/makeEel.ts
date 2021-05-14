@@ -1,5 +1,6 @@
 import { Sprite } from '@pixi/sprite';
-import { Container, filters, Point, Renderer, SimpleRope, Texture, Ticker } from 'pixi.js';
+import { Container, filters, Graphics, Point, Renderer, SimpleRope, Texture, Ticker } from 'pixi.js';
+import { showDebugPoints } from './showDebugPoints';
 
 export function makeEel(renderer: Renderer, scene: Container)
 {
@@ -22,6 +23,10 @@ export function makeEel(renderer: Renderer, scene: Container)
 
     eel.x = 250;
     eel.y = 500;
+
+    // const pointsView = showDebugPoints(points);
+
+    // eel.addChild(pointsView);
 
     Ticker.shared.add(() =>
     {
