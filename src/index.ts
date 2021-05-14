@@ -33,14 +33,14 @@ const scene = new Container();
 
 stage.addChild(scene);
 
-makeBackground(scene);
-makeFishes(renderer, scene);
-makeForeground(scene);
-makeEel(renderer, scene);
-makeSpine(renderer, scene);
-makeShine(scene);
-makeFilters(renderer, scene);
-makeVignette(scene);
+// makeBackground(scene);
+// makeFishes(renderer, scene);
+// makeForeground(scene);
+// makeEel(renderer, scene);
+// makeSpine(renderer, scene);
+// makeShine(scene);
+// makeFilters(renderer, scene);
+// makeVignette(scene);
 
 const imageContainer = new Container();
 
