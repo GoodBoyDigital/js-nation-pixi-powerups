@@ -12,7 +12,6 @@ export function makeSpine(renderer: Renderer, scene: Container)
 
     loader.load((_loader, resource) =>
     {
-        console.log(resource);
         const crab = new Spine(resource.crab.spineData);
 
         crab.position.set(renderer.width - 440, renderer.height - 40);

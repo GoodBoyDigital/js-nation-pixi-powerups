@@ -1,5 +1,6 @@
 import { Sprite } from '@pixi/sprite';
-import { Container, filters, Point, Renderer, SimpleRope, Texture, Ticker } from 'pixi.js';
+import { Container, filters, Graphics, Point, Renderer, SimpleRope, Texture, Ticker } from 'pixi.js';
+import { showDebugPoints } from './showDebugPoints';
 
 export function makeEel(renderer: Renderer, scene: Container)
 {
@@ -14,14 +15,21 @@ export function makeEel(renderer: Renderer, scene: Container)
         points.push(new Point(i * eelLength, 0));
     }
 
-    const eel = new SimpleRope(Texture.from('assets/eel.png'), points);
+    const pointsView = showDebugPoints(points);
 
-    scene.addChild(eel);
+    pointsView.x = 250;
+    pointsView.y = 500;
 
-    eel.x = 250;
-    eel.y = 500;
+    // eel.addChild(pointsView);
 
-    const count = 0;
+    // const eel = new SimpleRope(Texture.from('assets/eel.png'), points);
+
+    // scene.addChild(eel);
+
+    // eel.x = 250;
+    // eel.y = 500;
+
+    //
 
     // Ticker.shared.add(() =>
     // {
