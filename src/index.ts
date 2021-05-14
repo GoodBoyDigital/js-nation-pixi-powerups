@@ -33,7 +33,12 @@ const scene = new Container();
 
 stage.addChild(scene);
 
-// makeBackground(scene);
+Ticker.shared.add(() =>
+{
+    renderer.render(stage);
+});
+
+makeBackground(scene);
 // makeFishes(renderer, scene);
 // makeForeground(scene);
 // makeEel(renderer, scene);

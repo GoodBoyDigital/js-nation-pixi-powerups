@@ -20,7 +20,7 @@ export function makeEel(renderer: Renderer, scene: Container)
     pointsView.x = 250;
     pointsView.y = 500;
 
-    // eel.addChild(pointsView);
+    scene.addChild(pointsView);
 
     // const eel = new SimpleRope(Texture.from('assets/eel.png'), points);
 
