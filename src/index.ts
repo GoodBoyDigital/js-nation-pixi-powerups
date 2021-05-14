@@ -38,7 +38,7 @@ Ticker.shared.add(() =>
     renderer.render(stage);
 });
 
-makeBackground(scene);
+// makeBackground(scene);
 // makeFishes(renderer, scene);
 // makeForeground(scene);
 // makeEel(renderer, scene);
