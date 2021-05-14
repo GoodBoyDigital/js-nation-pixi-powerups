@@ -7,6 +7,7 @@ import { makeFishes } from './makeFishes';
 import { makeForeground } from './makeForeground';
 import { makeShine } from './makeShine';
 import { makeSpine } from './makeSpine';
+import { makeVignette } from './makeVignette';
 
 document.body.style.margin = '0px';
 document.body.style.overflow = 'hidden';
@@ -39,13 +40,13 @@ makeEel(renderer, scene);
 makeSpine(renderer, scene);
 makeShine(scene);
 makeFilters(renderer, scene);
+makeVignette(scene);
 
 const imageContainer = new Container();
-const vignette = Sprite.from('assets/vignette.png');
 
 makeCamera(renderer, scene, imageContainer);
 
-stage.addChild(vignette, imageContainer);
+stage.addChild(imageContainer);
 
 Ticker.shared.add(() =>
 {
