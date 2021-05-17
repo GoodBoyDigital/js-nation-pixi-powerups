@@ -4,7 +4,7 @@ The best way to learn is by doing, so have a play :)
 
 See a live version [here](http://js-nation.goodboydigital.com/main/)
 
-## setup (optional) ##
+## setup
 
 If you would like to use the set up build setup provided, follow these steps:
 
